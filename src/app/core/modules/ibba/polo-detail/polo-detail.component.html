@@ -1,1 +1,93 @@
-<p>polo-detail works!</p>
+<div class="itau-detail-polo">
+
+    <div class="grid-container">
+      <div class="grid-item-text">
+        <strong class="grid-item-text-strong">Polo "name"</strong>
+        <p class="grid-item-text-p">Exibindo detalhe do polo "name" </p>
+      </div>
+    </div>
+
+    <p> Detalhes do endereco</p>
+    <div class="grid-container">
+      <div class="grid-item-input">
+        <mat-form-field class="grid-item-mat" appearance="outline">
+          <mat-label>Component cep</mat-label>
+          <input matInput (keyup)="applyFilter($event)" >
+        </mat-form-field>
+      </div>
+
+      <div class="grid-item-input">
+        <mat-form-field class="grid-item-mat" appearance="outline">
+          <mat-label>Nome da Rua</mat-label>
+          <input matInput (keyup)="applyFilter($event)" >
+        </mat-form-field>
+      </div>
+
+      <div class="grid-item-input">
+        <mat-form-field class="grid-item-mat" appearance="outline">
+          <mat-label>Bairro</mat-label>
+          <input matInput (keyup)="applyFilter($event)" >
+        </mat-form-field>
+      </div>
+
+      <div class="grid-item-input">
+        <mat-form-field class="grid-item-mat" appearance="outline">
+          <mat-label>Estado</mat-label>
+          <input matInput (keyup)="applyFilter($event)" >
+        </mat-form-field>
+      </div>
+
+      <div class="grid-item-input">
+        <mat-form-field class="grid-item-mat" appearance="outline">
+          <mat-label>Cidade</mat-label>
+          <input matInput (keyup)="applyFilter($event)" >
+        </mat-form-field>
+      </div>
+
+    </div>
+
+    <p> Detalhes da empresa</p>
+    <div class="grid-container">
+      <div class="grid-item-input">
+        <mat-form-field class="grid-item-mat" appearance="outline">
+          <mat-label>Nome</mat-label>
+          <input matInput (keyup)="applyFilter($event)" >
+        </mat-form-field>
+      </div>
+
+      <div class="grid-item-input">
+        <mat-form-field class="grid-item-mat" appearance="outline">
+          <mat-label>Business</mat-label>
+          <input matInput (keyup)="applyFilter($event)" >
+        </mat-form-field>
+      </div>
+
+      <div class="grid-item-input">
+        <mat-form-field class="grid-item-mat" appearance="outline">
+          <mat-label>Valuation</mat-label>
+          <input matInput (keyup)="applyFilter($event)" >
+        </mat-form-field>
+      </div>
+
+      <div class="grid-item-input">
+        <mat-form-field class="grid-item-mat" appearance="outline">
+          <mat-label>CNPJ</mat-label>
+          <input matInput (keyup)="applyFilter($event)" >
+        </mat-form-field>
+      </div>
+
+      <div class="grid-item-input">
+        <mat-form-field class="grid-item-mat" appearance="outline">
+          <mat-label>Ativo?</mat-label>
+          <input matInput (keyup)="applyFilter($event)" >
+        </mat-form-field>
+      </div>
+
+    </div>
+
+    <button mat-button>Voltar</button>
+    <button mat-button>Salvar</button>
+</div>
+
+
+

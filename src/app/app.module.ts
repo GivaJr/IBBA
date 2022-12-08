@@ -1,3 +1,4 @@
+import { IbbaInterceptor } from './core/interceptors/ibba.interceptor';
 import { IbbaModule } from './core/modules/ibba/ibba.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -10,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { MatSliderModule } from '@angular/material/slider';
 // import { MatTableModule } from '@angular/material/table'
 import { SharedModule } from './shared/shared.module';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,11 @@ import { SharedModule } from './shared/shared.module';
     SharedModule
 
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS,
+    useClass: IbbaInterceptor,
+    multi:true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
