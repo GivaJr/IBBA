@@ -2,6 +2,8 @@ import { IbbaService } from './../../../services/ibba.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
 import { IBusiness } from 'src/app/shared/models/IBusiness';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Address } from 'src/app/shared/models/address';
 
 @Component({
   selector: 'app-polo-detail',
@@ -10,22 +12,65 @@ import { IBusiness } from 'src/app/shared/models/IBusiness';
 })
 export class PoloDetailComponent implements OnInit {
 
-  dataPolo:IBusiness;
+  dataPolo:IBusiness = {
+    active: false,
+    business: '',
+    cep: '',
+    cnpj: 0,
+    id: 0,
+    name: '',
+    valuation: 0
+  };
 
-  constructor(private ibbaService: IbbaService, private route: ActivatedRoute) { }
+  optionSelect:any[] = [{valueView:'Sim', value:true}, {valueView:'Não', value:false}]
+  formIBusiness: FormGroup;
+
+  addressDetail:Address = {
+    cep:'',
+    state: '',
+    city: '',
+    neighborhood: '',
+    street: '',
+    service: ''
+} ;
+
+  constructor(private ibbaService: IbbaService, private route: ActivatedRoute) {
+   }
 
   ngOnInit(): void {
     this.detailPoles();
   }
 
+
   detailPoles(){
     const idPolo = parseInt(this.route.snapshot.paramMap.get('id'));
     this.ibbaService.getDetailPoles(idPolo).subscribe(res =>{
     this.dataPolo = res;
+    this.createForm();
+    this.setValueForm(this.dataPolo);
     })
   }
 
-  applyFilter(event){
+  createForm() {
+    this.formIBusiness = new FormGroup({
+      name: new FormControl(''),
+      cnpj: new FormControl(''),
+      active: new FormControl(''),
+      business: new FormControl(''),
+      valuation: new FormControl('')
+    })
+  }
 
+  setValueForm(form: IBusiness){
+    this.formIBusiness.controls.name.setValue(form.name)
+    this.formIBusiness.controls.cnpj.setValue(form.cnpj)
+    this.formIBusiness.controls.active.setValue(form.active)
+    this.formIBusiness.controls.business.setValue(form.business)
+    this.formIBusiness.controls.valuation.setValue(form.valuation)
+
+  }
+
+  setInfoAddress($event){
+    this.addressDetail = $event
   }
 }

@@ -6,5 +6,5 @@ export interface IBusiness{
   cnpj:number,
   id:number,
   name:string,
-  valuation:number,
+  valuation:number
   }

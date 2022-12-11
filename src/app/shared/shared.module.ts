@@ -31,11 +31,12 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { MAT_DATE_LOCALE } from '@angular/material/core';
+import { CepComponent } from './components/cep/cep.component';
 
 
 @NgModule({
   declarations: [
-  ],
+  CepComponent],
   entryComponents: [],
   imports: [
     CommonModule,
@@ -100,7 +101,7 @@ import { MAT_DATE_LOCALE } from '@angular/material/core';
     MatTabsModule,
     DragDropModule,
     MatProgressBarModule,
-
+    CepComponent
   ],
   providers: [{ provide: MAT_DATE_LOCALE, useValue: 'pt-Br' }],
 })

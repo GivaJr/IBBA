@@ -1,93 +1,99 @@
-<div class="itau-detail-polo">
-
-    <div class="grid-container">
+<form [formGroup]="formIBusiness" *ngIf="formIBusiness">
+  <div class="itau-detail-polo form-group" >
+    <div class="grid-container title-subtitle-space">
       <div class="grid-item-text">
-        <strong class="grid-item-text-strong">Polo "name"</strong>
-        <p class="grid-item-text-p">Exibindo detalhe do polo "name" </p>
+        <strong class="grid-item-text-strong">Polo {{dataPolo?.name}}</strong>
+        <p class="grid-item-text-p">Exibindo detalhe do polo {{dataPolo?.name}} </p>
       </div>
     </div>
 
     <p> Detalhes do endereco</p>
     <div class="grid-container">
       <div class="grid-item-input">
-        <mat-form-field class="grid-item-mat" appearance="outline">
-          <mat-label>Component cep</mat-label>
-          <input matInput (keyup)="applyFilter($event)" >
-        </mat-form-field>
+        <app-cep [cepInput]="dataPolo.cep" (cepDetails)="setInfoAddress($event)"></app-cep>
       </div>
 
-      <div class="grid-item-input">
-        <mat-form-field class="grid-item-mat" appearance="outline">
+
+      <div class="grid-item-input" >
+        <mat-form-field class="grid-item-mat" style="width: 350px;" appearance="outline">
           <mat-label>Nome da Rua</mat-label>
-          <input matInput (keyup)="applyFilter($event)" >
+          <input matInput value="{{addressDetail.street}}">
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
           <mat-label>Bairro</mat-label>
-          <input matInput (keyup)="applyFilter($event)" >
+          <input matInput value="{{addressDetail.neighborhood}}">
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
           <mat-label>Estado</mat-label>
-          <input matInput (keyup)="applyFilter($event)" >
+          <input matInput value="{{addressDetail.state}}">
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
           <mat-label>Cidade</mat-label>
-          <input matInput (keyup)="applyFilter($event)" >
+          <input matInput value="{{addressDetail.city}}" >
         </mat-form-field>
       </div>
-
     </div>
 
     <p> Detalhes da empresa</p>
-    <div class="grid-container">
+    <div class="grid-container" style="width: 200px;">
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
           <mat-label>Nome</mat-label>
-          <input matInput (keyup)="applyFilter($event)" >
+          <input matInput type="text" class="form-control" formControlName="name" >
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
           <mat-label>Business</mat-label>
-          <input matInput (keyup)="applyFilter($event)" >
+          <input matInput class="form-control" formControlName="business" >
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
           <mat-label>Valuation</mat-label>
-          <input matInput (keyup)="applyFilter($event)" >
+          <input matInput class="form-control" formControlName="valuation" >
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
           <mat-label>CNPJ</mat-label>
-          <input matInput (keyup)="applyFilter($event)" >
+          <input matInput class="form-control" formControlName="cnpj" >
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
-        <mat-form-field class="grid-item-mat" appearance="outline">
+        <mat-form-field appearance="outline">
           <mat-label>Ativo?</mat-label>
-          <input matInput (keyup)="applyFilter($event)" >
+          <mat-select class="form-control" formControlName="active">
+            <mat-option *ngFor="let option of optionSelect" [value]="option.value">
+              {{option.valueView}}
+            </mat-option>
+          </mat-select>
         </mat-form-field>
       </div>
-
     </div>
 
-    <button mat-button>Voltar</button>
-    <button mat-button>Salvar</button>
+    <div class="button-space">
+      <button mat-button class="button-voltar" [routerLink]="['/']">Voltar</button>
+      <button mat-button class="button-salvar">Salvar</button>
+    </div>
 </div>
+
+</form>
+
+
 
 
 
