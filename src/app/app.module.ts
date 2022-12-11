@@ -1,3 +1,5 @@
+import { CurrencyPipe } from './shared/pipes/currency.pipe';
+import { CnpjPipe } from './shared/pipes/cnpj.pipe';
 import { IbbaInterceptor } from './core/interceptors/ibba.interceptor';
 import { IbbaModule } from './core/modules/ibba/ibba.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -26,7 +28,9 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
   providers: [
     {provide: HTTP_INTERCEPTORS,
     useClass: IbbaInterceptor,
-    multi:true}
+    multi:true},
+    CnpjPipe,
+    CurrencyPipe
   ],
   bootstrap: [AppComponent]
 })

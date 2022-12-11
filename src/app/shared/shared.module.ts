@@ -32,11 +32,15 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 
 import { MAT_DATE_LOCALE } from '@angular/material/core';
 import { CepComponent } from './components/cep/cep.component';
+import { CnpjPipe } from './pipes/cnpj.pipe';
+import { CurrencyPipe } from './pipes/currency.pipe';
 
 
 @NgModule({
   declarations: [
-  CepComponent],
+  CepComponent,
+  CnpjPipe,
+  CurrencyPipe],
   entryComponents: [],
   imports: [
     CommonModule,

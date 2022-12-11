@@ -31,7 +31,7 @@
 
         <ng-container matColumnDef="valuation">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Valuation </th>
-          <td mat-cell *matCellDef="let element"> {{element.valuation}} </td>
+          <td mat-cell *matCellDef="let element"> {{applyPipe(element.valuation)}} </td>
         </ng-container>
 
         <ng-container matColumnDef="situacao">

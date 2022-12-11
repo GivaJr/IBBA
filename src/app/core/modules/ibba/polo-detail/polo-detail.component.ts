@@ -1,3 +1,5 @@
+import { CurrencyPipe } from './../../../../shared/pipes/currency.pipe';
+import { CnpjPipe } from './../../../../shared/pipes/cnpj.pipe';
 import { IbbaService } from './../../../services/ibba.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
@@ -34,7 +36,8 @@ export class PoloDetailComponent implements OnInit {
     service: ''
 } ;
 
-  constructor(private ibbaService: IbbaService, private route: ActivatedRoute) {
+  constructor(private ibbaService: IbbaService, private route: ActivatedRoute,
+    private cnpjPipe: CnpjPipe, private currency: CurrencyPipe) {
    }
 
   ngOnInit(): void {
@@ -63,10 +66,10 @@ export class PoloDetailComponent implements OnInit {
 
   setValueForm(form: IBusiness){
     this.formIBusiness.controls.name.setValue(form.name)
-    this.formIBusiness.controls.cnpj.setValue(form.cnpj)
+    this.formIBusiness.controls.cnpj.setValue(this.cnpjPipe.transform(form.cnpj))
     this.formIBusiness.controls.active.setValue(form.active)
     this.formIBusiness.controls.business.setValue(form.business)
-    this.formIBusiness.controls.valuation.setValue(form.valuation)
+    this.formIBusiness.controls.valuation.setValue(this.currency.transform(form.valuation))
 
   }
 

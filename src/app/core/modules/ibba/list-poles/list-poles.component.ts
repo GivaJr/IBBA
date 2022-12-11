@@ -1,3 +1,4 @@
+import { CurrencyPipe } from './../../../../shared/pipes/currency.pipe';
 import { IbbaService } from './../../../services/ibba.service';
 import {Component, OnInit, ViewChild } from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
@@ -19,7 +20,7 @@ export class ListPolesComponent implements OnInit  {
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
 
-  constructor(private IBBAService: IbbaService) { }
+  constructor(private IBBAService: IbbaService, private currency:CurrencyPipe) { }
 
   ngOnInit(): void {
     this.ListPoles();
@@ -39,7 +40,10 @@ export class ListPolesComponent implements OnInit  {
     if(this.dataSource.paginator){
       this.dataSource.paginator.firstPage();
     }
+  }
 
+  applyPipe(value){
+   return this.currency.transform(value)
   }
 }
 
