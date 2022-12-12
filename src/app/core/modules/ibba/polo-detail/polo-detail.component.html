@@ -2,12 +2,12 @@
   <div class="itau-detail-polo form-group" >
     <div class="grid-container title-subtitle-space">
       <div class="grid-item-text">
-        <strong class="grid-item-text-strong">Polo {{dataPolo?.name}}</strong>
-        <p class="grid-item-text-p">Exibindo detalhe do polo {{dataPolo?.name}} </p>
+        <strong class="grid-item-text-strong" i18n>Pole {{dataPolo?.name}}</strong>
+        <p class="grid-item-text-p" i18n>Displaying pole detail {{dataPolo?.name}} </p>
       </div>
     </div>
 
-    <p> Detalhes do endereco</p>
+    <p i18n> address details</p>
     <div class="grid-container">
       <div class="grid-item-input">
         <app-cep [cepInput]="dataPolo.cep" (cepDetails)="setInfoAddress($event)"></app-cep>
@@ -16,61 +16,61 @@
 
       <div class="grid-item-input" >
         <mat-form-field class="grid-item-mat" style="width: 350px;" appearance="outline">
-          <mat-label>Nome da Rua</mat-label>
+          <mat-label i18n>Name of the street</mat-label>
           <input matInput value="{{addressDetail.street}}">
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
-          <mat-label>Bairro</mat-label>
+          <mat-label i18n>Neighborhood</mat-label>
           <input matInput value="{{addressDetail.neighborhood}}">
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
-          <mat-label>Estado</mat-label>
+          <mat-label i18n>State</mat-label>
           <input matInput value="{{addressDetail.state}}">
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
-          <mat-label>Cidade</mat-label>
+          <mat-label i18n>City</mat-label>
           <input matInput value="{{addressDetail.city}}" >
         </mat-form-field>
       </div>
     </div>
 
-    <p> Detalhes da empresa</p>
+    <p i18n> company details</p>
     <div class="grid-container" style="width: 200px;">
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
-          <mat-label>Nome</mat-label>
+          <mat-label i18n>Name</mat-label>
           <input matInput type="text" class="form-control" formControlName="name" >
-          <mat-error>
-            O campo é obrigatório.
+          <mat-error i18n>
+            The field is required.
            </mat-error>
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
-          <mat-label>Business</mat-label>
+          <mat-label i18n>Business</mat-label>
           <input matInput class="form-control" formControlName="business" >
-          <mat-error>
-            O campo é obrigatório.
+          <mat-error i18n>
+            The field is required.
            </mat-error>
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field class="grid-item-mat" appearance="outline">
-          <mat-label>Valuation</mat-label>
+          <mat-label i18n>Valuation</mat-label>
           <input matInput class="form-control" formControlName="valuation" >
-          <mat-error>
-           O campo é obrigatório.
+          <mat-error i18n>
+            The field is required.
           </mat-error>
         </mat-form-field>
       </div>
@@ -79,30 +79,30 @@
         <mat-form-field class="grid-item-mat" appearance="outline">
           <mat-label>CNPJ</mat-label>
           <input matInput class="form-control" formControlName="cnpj" >
-          <mat-error>
-            O campo é obrigatório.
+          <mat-error i18n>
+            The field is required.
            </mat-error>
         </mat-form-field>
       </div>
 
       <div class="grid-item-input">
         <mat-form-field appearance="outline">
-          <mat-label>Ativo?</mat-label>
+          <mat-label i18n>Active?</mat-label>
           <mat-select class="form-control" formControlName="active">
             <mat-option *ngFor="let option of optionSelect" [value]="option.value">
               {{option.valueView}}
             </mat-option>
           </mat-select>
-          <mat-error>
-            O campo é obrigatório.
+          <mat-error i18n>
+            The field is required.
            </mat-error>
         </mat-form-field>
       </div>
     </div>
 
     <div class="button-space">
-      <button mat-button class="button-voltar" [routerLink]="['/']">Voltar</button>
-      <button mat-button class="button-salvar">Salvar</button>
+      <button i18n mat-button class="button-voltar" [routerLink]="['/']">Back</button>
+      <button i18n mat-button class="button-salvar">Save</button>
     </div>
 </div>
 

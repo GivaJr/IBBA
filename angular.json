@@ -61,6 +61,13 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "pt": {
+              "aot": true,
+              "outputPath": "dist/IBBA-pt",
+              "i18nFile": "src/locale/messages.pt.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "pt"
             }
           }
         },
@@ -72,6 +79,9 @@
           "configurations": {
             "production": {
               "browserTarget": "IBBA:build:production"
+            },
+            "pt": {
+              "browserTarget": "IBBA:build:pt"
             }
           }
         },
@@ -120,6 +130,21 @@
           "configurations": {
             "production": {
               "devServerTarget": "IBBA:serve:production"
+            }
+          }
+        },
+        "xliffmerge": {
+          "builder": "@ngx-i18nsupport/tooling:xliffmerge",
+          "options": {
+            "xliffmergeOptions": {
+              "i18nFormat": "xlf",
+              "srcDir": "src/locale",
+              "genDir": "src/locale",
+              "defaultLanguage": "en",
+              "languages": [
+                "en",
+                "pt"
+              ]
             }
           }
         }

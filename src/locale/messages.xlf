@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ef1d23f20d3bd8bedbc69eb9344258efeca76ec1" datatype="html">
+        <source>EN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/components/header/header.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5d098e2076a1013aa0307472b78547867e8076f5" datatype="html">
+        <source>Director Itaú BBA</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/components/header/header.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a3dc90c5ef86aac89fe4d0c2259213dee135e18f" datatype="html">
+        <source>Poles Itaú</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/list-poles/list-poles.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d89ab332f04f76e4f4e0a714924077fb80a1af44" datatype="html">
+        <source>Check below some of the main centers of itaú.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/list-poles/list-poles.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8aa58cf00d949c509df91c621ab38131df0a7599" datatype="html">
+        <source>Search...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/list-poles/list-poles.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="20371277706eedf7fd8a3f51633ca5d801cd4fc2" datatype="html">
+        <source> Name </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/list-poles/list-poles.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ddc6d1b0450c4dad2100e5b8c143f74fb86f721b" datatype="html">
+        <source> Business </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/list-poles/list-poles.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1bb4892968d210e8f0a5ce49f9588f2d7f0bf5e7" datatype="html">
+        <source> Valuation </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/list-poles/list-poles.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1bfd70265ffeebd14e2942a9b8713a6097ed2083" datatype="html">
+        <source> Situation </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/list-poles/list-poles.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="01a32bb7e93373cbc305329319efc67c0bd85226" datatype="html">
+        <source> Action </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/list-poles/list-poles.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="118ce0360fc062ada5ba9b24e2bda65432c8def5" datatype="html">
+        <source>Pole <x id="INTERPOLATION" equiv-text="{{dataPolo?.name}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="660e374a1b111d8c33fa042aba895fa5afaf05b3" datatype="html">
+        <source>Displaying pole detail <x id="INTERPOLATION" equiv-text="{{dataPolo?.name}}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="50994a60b17f07663a8c8345d07d59afeccdd8bc" datatype="html">
+        <source> address details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9883ff9ce4aa6560870be3d5a691aa95601ad678" datatype="html">
+        <source>Name of the street</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="53b252b666c5ae81fffeb940f4024b5d444a9ca2" datatype="html">
+        <source>Neighborhood</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="873b72903b1858a9cd6c8967521030b4d7d1435b" datatype="html">
+        <source>State</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5c7012b5a926b32d9e45fefdcc8a1a3cb6f023d0" datatype="html">
+        <source>City</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ed193707dbda003d46447f02ca9ade7ab346dfc3" datatype="html">
+        <source> company details</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1952edf75fb15a5d50d235818dae8298f4b4bb6e" datatype="html">
+        <source>
+            The field is required.
+           </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e45bb24e9faf557d26abd6822d6a6da37e3ff171" datatype="html">
+        <source>Business</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="c9cabe740912cec693778155b97bbb2507099478" datatype="html">
+        <source>Valuation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="e24b92e8f4611d8ff8597e6c2df4c968742ec6be" datatype="html">
+        <source>
+            The field is required.
+          </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="969b5da63e6a30c09fef3339fc4b39480a430b3a" datatype="html">
+        <source>Active?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="cda31dbd724cf5f4fa7a4274d9120651490c8a8c" datatype="html">
+        <source>Back</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="52c9a103b812f258bcddc3d90a6e3f46871d25fe" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/core/modules/ibba/polo-detail/polo-detail.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
