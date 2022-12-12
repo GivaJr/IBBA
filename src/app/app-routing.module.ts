@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListPolesComponent } from './core/modules/ibba/list-poles/list-poles.component';
 
 const routes: Routes = [
-  { path: '', component: ListPolesComponent }
+  { path: '', redirectTo:'ibba/list-poles' , pathMatch: 'full' }
 ];
 
 @NgModule({
