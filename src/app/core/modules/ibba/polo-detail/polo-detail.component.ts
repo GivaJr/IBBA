@@ -4,7 +4,7 @@ import { IbbaService } from './../../../services/ibba.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
 import { IBusiness } from 'src/app/shared/models/IBusiness';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Address } from 'src/app/shared/models/address';
 
 @Component({
@@ -56,11 +56,11 @@ export class PoloDetailComponent implements OnInit {
 
   createForm() {
     this.formIBusiness = new FormGroup({
-      name: new FormControl(''),
-      cnpj: new FormControl(''),
-      active: new FormControl(''),
-      business: new FormControl(''),
-      valuation: new FormControl('')
+      name: new FormControl('',Validators.required),
+      cnpj: new FormControl('',Validators.required),
+      active: new FormControl('',Validators.required),
+      business: new FormControl('',Validators.required),
+      valuation: new FormControl('',Validators.required)
     })
   }
 
